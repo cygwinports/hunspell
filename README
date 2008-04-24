@@ -1,0 +1,118 @@
+hunspell
+------------------------------------------
+Hunspell is a spell checker and morphological analyzer library and 
+program designed for languages with rich morphology and complex 
+compounding or character encoding.
+
+Runtime requirements:
+  cygwin-1.5.25-11
+  libiconv2-1.11-1
+  libintl8-0.15-1
+  libncurses8-5.5-3
+  libreadline6-5.2.7-9
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.3.9-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool-2.2.2-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://hunspell.sourceforge.net/
+
+Canonical download:
+  http://sourceforge.net/projects/hunspell/files
+
+-------------------------------------------
+
+Build instructions:
+  unpack hunspell-1.2.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./hunspell-1.2.2-X.cygport all
+
+This will create:
+  /usr/src/hunspell-1.2.2-X-src.tar.bz2
+  /usr/src/hunspell-1.2.2-X.tar.bz2
+  /usr/src/libhunspell-devel-1.2.2-X.tar.bz2
+  /usr/src/libhunspell12-1.2.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(hunspell)
+  /usr/bin/hunspell-analyze.exe
+  /usr/bin/hunspell-chmorph.exe
+  /usr/bin/hunspell-example.exe
+  /usr/bin/hunspell-munch.exe
+  /usr/bin/hunspell-unmunch.exe
+  /usr/bin/hunspell.exe
+  /usr/bin/hunzip.exe
+  /usr/bin/hzip.exe
+  /usr/share/doc/hunspell-1.2.2/ABOUT-NLS
+  /usr/share/doc/hunspell-1.2.2/AUTHORS
+  /usr/share/doc/hunspell-1.2.2/AUTHORS.myspell
+  /usr/share/doc/hunspell-1.2.2/BUGS
+  /usr/share/doc/hunspell-1.2.2/COPYING
+  /usr/share/doc/hunspell-1.2.2/ChangeLog
+  /usr/share/doc/hunspell-1.2.2/INSTALL
+  /usr/share/doc/hunspell-1.2.2/NEWS
+  /usr/share/doc/hunspell-1.2.2/README
+  /usr/share/doc/hunspell-1.2.2/README.myspell
+  /usr/share/doc/hunspell-1.2.2/THANKS
+  /usr/share/doc/hunspell-1.2.2/TODO
+  /usr/share/doc/hunspell-1.2.2/license.myspell
+  /usr/share/locale/hu/LC_MESSAGES/hunspell.mo
+  /usr/share/man/hu/man1/hunspell.1.gz
+  /usr/share/man/hu/man4/hunspell.4.gz
+  /usr/share/man/man1/hunspell.1.gz
+  /usr/share/man/man4/hunspell.4.gz
+
+(libhunspell12)
+  /usr/bin/cyghunspell-1.2-0.dll
+
+(libhunspell-devel)
+  /usr/include/hunspell/affentry.hxx
+  /usr/include/hunspell/affixmgr.hxx
+  /usr/include/hunspell/atypes.hxx
+  /usr/include/hunspell/baseaffix.hxx
+  /usr/include/hunspell/csutil.hxx
+  /usr/include/hunspell/dictmgr.hxx
+  /usr/include/hunspell/filemgr.hxx
+  /usr/include/hunspell/hashmgr.hxx
+  /usr/include/hunspell/htypes.hxx
+  /usr/include/hunspell/hunspell.h
+  /usr/include/hunspell/hunspell.hxx
+  /usr/include/hunspell/hunzip.hxx
+  /usr/include/hunspell/langnum.hxx
+  /usr/include/hunspell/munch.h
+  /usr/include/hunspell/phonet.hxx
+  /usr/include/hunspell/suggestmgr.hxx
+  /usr/include/hunspell/unmunch.h
+  /usr/include/hunspell/w_char.hxx
+  /usr/lib/libhunspell-1.2.a
+  /usr/lib/libhunspell-1.2.dll.a
+  /usr/lib/libhunspell-1.2.la
+  /usr/lib/libhunspell.a
+  /usr/lib/libhunspell.dll.a
+  /usr/lib/pkgconfig/hunspell.pc
+
+------------------
+
+Port Notes:
+
+----- version 1.2.2-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
