@@ -33,17 +33,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack hunspell-1.2.3-X-src.tar.bz2
+  unpack hunspell-1.2.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./hunspell-1.2.3-X.cygport all
+  cygport ./hunspell-1.2.4-X.cygport all
 
 This will create:
-  /usr/src/hunspell-1.2.3-X-src.tar.bz2
-  /usr/src/hunspell-1.2.3-X.tar.bz2
-  /usr/src/libhunspell-devel-1.2.3-X.tar.bz2
-  /usr/src/libhunspell12-1.2.3-X.tar.bz2
+  /usr/src/hunspell-1.2.4-X-src.tar.bz2
+  /usr/src/hunspell-1.2.4-X.tar.bz2
+  /usr/src/libhunspell-devel-1.2.4-X.tar.bz2
+  /usr/src/libhunspell12-1.2.4-X.tar.bz2
 
 -------------------------------------------
 
@@ -58,19 +58,19 @@ Files included in the binary packages:
   /usr/bin/hunspell.exe
   /usr/bin/hunzip.exe
   /usr/bin/hzip.exe
-  /usr/share/doc/hunspell-1.2.3/ABOUT-NLS
-  /usr/share/doc/hunspell-1.2.3/AUTHORS
-  /usr/share/doc/hunspell-1.2.3/AUTHORS.myspell
-  /usr/share/doc/hunspell-1.2.3/BUGS
-  /usr/share/doc/hunspell-1.2.3/COPYING
-  /usr/share/doc/hunspell-1.2.3/ChangeLog
-  /usr/share/doc/hunspell-1.2.3/INSTALL
-  /usr/share/doc/hunspell-1.2.3/NEWS
-  /usr/share/doc/hunspell-1.2.3/README
-  /usr/share/doc/hunspell-1.2.3/README.myspell
-  /usr/share/doc/hunspell-1.2.3/THANKS
-  /usr/share/doc/hunspell-1.2.3/TODO
-  /usr/share/doc/hunspell-1.2.3/license.myspell
+  /usr/share/doc/hunspell-1.2.4/ABOUT-NLS
+  /usr/share/doc/hunspell-1.2.4/AUTHORS
+  /usr/share/doc/hunspell-1.2.4/AUTHORS.myspell
+  /usr/share/doc/hunspell-1.2.4/BUGS
+  /usr/share/doc/hunspell-1.2.4/COPYING
+  /usr/share/doc/hunspell-1.2.4/ChangeLog
+  /usr/share/doc/hunspell-1.2.4/INSTALL
+  /usr/share/doc/hunspell-1.2.4/NEWS
+  /usr/share/doc/hunspell-1.2.4/README
+  /usr/share/doc/hunspell-1.2.4/README.myspell
+  /usr/share/doc/hunspell-1.2.4/THANKS
+  /usr/share/doc/hunspell-1.2.4/TODO
+  /usr/share/doc/hunspell-1.2.4/license.myspell
   /usr/share/locale/hu/LC_MESSAGES/hunspell.mo
   /usr/share/man/hu/man1/hunspell.1.gz
   /usr/share/man/hu/man4/hunspell.4.gz
@@ -109,6 +109,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.2.4-1 -----
+Version bump.
 
 ----- version 1.2.3-1 -----
 Version bump.
