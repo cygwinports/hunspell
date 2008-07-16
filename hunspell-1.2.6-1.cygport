@@ -1,0 +1,25 @@
+DESCRIPTION="Spell checker and morphological analyzer"
+HOMEPAGE="http://hunspell.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+PKG_NAMES="${PN} lib${PN}${PV_MAJ_MIN/.} lib${PN}-devel"
+PKG_HINTS="bin lib devel"
+PKG_CONTENTS[0]="usr/bin/*.exe usr/share/"
+PKG_CONTENTS[1]="usr/bin/*-${PV_MAJ_MIN}-0.dll"
+PKG_CONTENTS[2]="usr/include/ usr/lib/"
+
+DIFF_EXCLUDES="intl m4 po"
+
+CYGCONF_ARGS="--with-readline --with-ui"
+
+DOCS="*.myspell"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	for ext in a dll.a
+	do
+		dosym libhunspell-${PV_MAJ_MIN}.${ext} /usr/lib/libhunspell.${ext}
+	done
+}
