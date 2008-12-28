@@ -6,21 +6,21 @@ compounding or character encoding.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  libiconv2-1.11-1
-  libintl8-0.15-1
+  libiconv2-1.12-1
+  libintl8-0.17-2
   libncurses8-5.5-3
-  libreadline6-5.2.12-10
+  libreadline6-5.2.13-11
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20080523-2
-  cygport-0.3.12-1
+  autoconf2.5-2.63-1
+  automake1.9-1.9.6-3
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
-  libtool-2.2.2-2
+  libtool-2.2.6a-1
   make-3.81-1
   sed-4.1.5-2
 
@@ -33,17 +33,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack hunspell-1.2.7-X-src.tar.bz2
+  unpack hunspell-1.2.8-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./hunspell-1.2.7-X.cygport all
+  cygport ./hunspell-1.2.8-X.cygport all
 
 This will create:
-  /usr/src/hunspell-1.2.7-X-src.tar.bz2
-  /usr/src/hunspell-1.2.7-X.tar.bz2
-  /usr/src/libhunspell-devel-1.2.7-X.tar.bz2
-  /usr/src/libhunspell12-1.2.7-X.tar.bz2
+  /usr/src/hunspell-1.2.8-X-src.tar.bz2
+  /usr/src/hunspell-1.2.8-X.tar.bz2
+  /usr/src/libhunspell-devel-1.2.8-X.tar.bz2
+  /usr/src/libhunspell1.2_0-1.2.8-X.tar.bz2
 
 -------------------------------------------
 
@@ -58,26 +58,26 @@ Files included in the binary packages:
   /usr/bin/hunspell.exe
   /usr/bin/hunzip.exe
   /usr/bin/hzip.exe
-  /usr/share/doc/hunspell-1.2.7/ABOUT-NLS
-  /usr/share/doc/hunspell-1.2.7/AUTHORS
-  /usr/share/doc/hunspell-1.2.7/AUTHORS.myspell
-  /usr/share/doc/hunspell-1.2.7/BUGS
-  /usr/share/doc/hunspell-1.2.7/COPYING
-  /usr/share/doc/hunspell-1.2.7/ChangeLog
-  /usr/share/doc/hunspell-1.2.7/INSTALL
-  /usr/share/doc/hunspell-1.2.7/NEWS
-  /usr/share/doc/hunspell-1.2.7/README
-  /usr/share/doc/hunspell-1.2.7/README.myspell
-  /usr/share/doc/hunspell-1.2.7/THANKS
-  /usr/share/doc/hunspell-1.2.7/TODO
-  /usr/share/doc/hunspell-1.2.7/license.myspell
+  /usr/share/doc/hunspell-1.2.8/ABOUT-NLS
+  /usr/share/doc/hunspell-1.2.8/AUTHORS
+  /usr/share/doc/hunspell-1.2.8/AUTHORS.myspell
+  /usr/share/doc/hunspell-1.2.8/BUGS
+  /usr/share/doc/hunspell-1.2.8/COPYING
+  /usr/share/doc/hunspell-1.2.8/ChangeLog
+  /usr/share/doc/hunspell-1.2.8/INSTALL
+  /usr/share/doc/hunspell-1.2.8/NEWS
+  /usr/share/doc/hunspell-1.2.8/README
+  /usr/share/doc/hunspell-1.2.8/README.myspell
+  /usr/share/doc/hunspell-1.2.8/THANKS
+  /usr/share/doc/hunspell-1.2.8/TODO
+  /usr/share/doc/hunspell-1.2.8/license.myspell
   /usr/share/locale/hu/LC_MESSAGES/hunspell.mo
   /usr/share/man/hu/man1/hunspell.1.gz
   /usr/share/man/hu/man4/hunspell.4.gz
   /usr/share/man/man1/hunspell.1.gz
   /usr/share/man/man4/hunspell.4.gz
 
-(libhunspell12)
+(libhunspell1.2_0)
   /usr/bin/cyghunspell-1.2-0.dll
 
 (libhunspell-devel)
@@ -109,6 +109,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.2.8-1 -----
+Version bump.
 
 ----- version 1.2.7-1 -----
 Version bump.

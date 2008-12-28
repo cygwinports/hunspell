@@ -1,5 +1,5 @@
 category: Text
-requires: cygwin libhunspell12 libiconv2 libintl8 libncurses8 libreadline6
+requires: cygwin libhunspell1.2_0 libiconv2 libintl8 libncurses8 libreadline6
 sdesc: "Spell checker and morphological analyzer (CLI)"
 ldesc: "Hunspell is a spell checker and morphological analyzer library 
 and program designed for languages with rich morphology and complex 

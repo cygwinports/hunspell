@@ -1,9 +1,10 @@
---- origsrc/hunspell-1.2.7/src/hunspell/Makefile.am	2008-06-17 03:57:54.000000000 -0500
-+++ src/hunspell-1.2.7/src/hunspell/Makefile.am	2008-08-17 20:13:43.157603200 -0500
-@@ -6,6 +6,7 @@
+--- origsrc/hunspell-1.2.8/src/hunspell/Makefile.am	2008-06-17 03:57:54.000000000 -0500
++++ src/hunspell-1.2.8/src/hunspell/Makefile.am	2008-08-17 20:13:43.157603200 -0500
+@@ -6,6 +6,8 @@
  		     dictmgr.cxx hashmgr.cxx hunspell.cxx utf_info.cxx \
  	             suggestmgr.cxx license.myspell license.hunspell \
- 	             phonet.cxx filemgr.cxx hunzip.cxx
+ 	             phonet.cxx filemgr.cxx hunzip.cxx replist.cxx
++
 +libhunspell_1_2_la_LDFLAGS = -no-undefined
  
  libhunspell_1_2_include_HEADERS=affentry.hxx htypes.hxx affixmgr.hxx \
