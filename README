@@ -5,23 +5,25 @@ program designed for languages with rich morphology and complex
 compounding or character encoding.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libiconv2-1.12-1
-  libintl8-0.17-2
-  libncurses8-5.5-3
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  libiconv2-1.12-10
+  libintl8-0.17-10
+  libncurses8-5.7-13
   libreadline6-5.2.13-11
+  libstdc++6-4.3.2-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-3
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  libtool-2.2.6a-1
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  libtool-2.2.7a-11
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical website:
@@ -58,19 +60,17 @@ Files included in the binary packages:
   /usr/bin/hunspell.exe
   /usr/bin/hunzip.exe
   /usr/bin/hzip.exe
-  /usr/share/doc/hunspell-1.2.8/ABOUT-NLS
-  /usr/share/doc/hunspell-1.2.8/AUTHORS
-  /usr/share/doc/hunspell-1.2.8/AUTHORS.myspell
-  /usr/share/doc/hunspell-1.2.8/BUGS
-  /usr/share/doc/hunspell-1.2.8/COPYING
-  /usr/share/doc/hunspell-1.2.8/ChangeLog
-  /usr/share/doc/hunspell-1.2.8/INSTALL
-  /usr/share/doc/hunspell-1.2.8/NEWS
-  /usr/share/doc/hunspell-1.2.8/README
-  /usr/share/doc/hunspell-1.2.8/README.myspell
-  /usr/share/doc/hunspell-1.2.8/THANKS
-  /usr/share/doc/hunspell-1.2.8/TODO
-  /usr/share/doc/hunspell-1.2.8/license.myspell
+  /usr/share/doc/hunspell/AUTHORS
+  /usr/share/doc/hunspell/AUTHORS.myspell
+  /usr/share/doc/hunspell/BUGS
+  /usr/share/doc/hunspell/COPYING
+  /usr/share/doc/hunspell/ChangeLog
+  /usr/share/doc/hunspell/NEWS
+  /usr/share/doc/hunspell/README
+  /usr/share/doc/hunspell/README.myspell
+  /usr/share/doc/hunspell/THANKS
+  /usr/share/doc/hunspell/TODO
+  /usr/share/doc/hunspell/license.myspell
   /usr/share/locale/hu/LC_MESSAGES/hunspell.mo
   /usr/share/man/hu/man1/hunspell.1.gz
   /usr/share/man/hu/man4/hunspell.4.gz
@@ -111,19 +111,7 @@ Files included in the binary packages:
 Port Notes:
 
 ----- version 1.2.8-1 -----
-Version bump.
-
------ version 1.2.7-1 -----
-Version bump.
-
------ version 1.2.4-1 -----
-Version bump.
-
------ version 1.2.3-1 -----
-Version bump.
-
------ version 1.2.2-1 -----
-Initial release for Cygwin.
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
