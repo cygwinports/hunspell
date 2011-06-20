@@ -1,5 +1,5 @@
 category: Text
-requires: libhunspell1.2_0 libstdc++6-devel
+requires: libhunspell1.3_0 libstdc++6-devel
 external-source: hunspell
 sdesc: "Spell checker and morphological analyzer (libdevel)"
 ldesc: "Hunspell is a spell checker and morphological analyzer library 
