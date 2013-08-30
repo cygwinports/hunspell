@@ -1,7 +1,0 @@
-category: Text
-requires: libgcc1 libstdc++6
-external-source: hunspell
-sdesc: "Spell checker and morphological analyzer (library)"
-ldesc: "Hunspell is a spell checker and morphological analyzer library 
-and program designed for languages with rich morphology and complex 
-compounding or character encoding."

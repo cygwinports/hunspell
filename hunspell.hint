@@ -1,6 +1,0 @@
-category: Text
-requires: libgcc1 libhunspell1.3_0 libiconv2 libintl8 libncursesw10 libreadline7 libstdc++6
-sdesc: "Spell checker and morphological analyzer (CLI)"
-ldesc: "Hunspell is a spell checker and morphological analyzer library 
-and program designed for languages with rich morphology and complex 
-compounding or character encoding."
