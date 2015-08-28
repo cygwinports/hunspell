@@ -1,5 +1,5 @@
 NAME="hunspell"
-VERSION=1.3.2
+VERSION=1.3.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Spell checker and morphological analyzer"
@@ -9,18 +9,25 @@ compounding or character encoding."
 HOMEPAGE="http://hunspell.sourceforge.net/"
 SRC_URI="mirror://sourceforge/hunspell/hunspell-${VERSION}.tar.gz"
 PATCH_URI="
-	mirror://portage/app-text/hunspell/files/hunspell-1.3-renameexes.patch
+	http://pkgs.fedoraproject.org/cgit/hunspell.git/plain/hunspell.rhbz915448.patch
 "
 
 PKG_NAMES="hunspell libhunspell1.3_0 libhunspell-devel"
 hunspell_CATEGORY="Text"
-hunspell_CONTENTS="usr/bin/*.exe usr/bin/*2*spell usr/share/"
+hunspell_CONTENTS="
+	usr/bin/hunspell.exe
+	usr/share/doc/
+	usr/share/locale/
+	usr/share/man/man1/hunspell.1*
+	usr/share/man/hu/man1/hunspell.1*
+"
 libhunspell1_3_0_CONTENTS="usr/bin/*-1.3-0.dll"
-libhunspell_devel_CONTENTS="usr/include/ usr/lib/"
+libhunspell_devel_CONTENTS="
+	--exclude=hunspell.exe --exclude=hunspell.1* --exclude=*.dll
+	usr/bin/ usr/include/ usr/lib/ usr/share/man/"
 
 DIFF_EXCLUDES="intl m4 po"
 
-CPPFLAGS="-I/usr/include/ncursesw"
 CYGCONF_ARGS="--with-readline --with-ui"
 
 DOCS="*.myspell"
