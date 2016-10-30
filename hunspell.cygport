@@ -1,18 +1,15 @@
 NAME="hunspell"
-VERSION=1.3.3
+VERSION=1.4.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Spell checker and morphological analyzer"
 DESCRIPTION="Hunspell is a spell checker and morphological analyzer library
 and program designed for languages with rich morphology and complex
 compounding or character encoding."
-HOMEPAGE="http://hunspell.sourceforge.net/"
-SRC_URI="mirror://sourceforge/hunspell/hunspell-${VERSION}.tar.gz"
-PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/hunspell.git/plain/hunspell.rhbz915448.patch
-"
+HOMEPAGE="https://hunspell.github.io/"
+SRC_URI="https://github.com/hunspell/hunspell/archive/v${VERSION}/hunspell-v${VERSION}.tar.gz"
 
-PKG_NAMES="hunspell libhunspell1.3_0 libhunspell-devel"
+PKG_NAMES="hunspell libhunspell1.4_0 libhunspell-devel"
 hunspell_CATEGORY="Text"
 hunspell_CONTENTS="
 	usr/bin/hunspell.exe
@@ -21,16 +18,22 @@ hunspell_CONTENTS="
 	usr/share/man/man1/hunspell.1*
 	usr/share/man/hu/man1/hunspell.1*
 "
-libhunspell1_3_0_CONTENTS="usr/bin/*-1.3-0.dll"
+libhunspell1_4_0_CONTENTS="usr/bin/*-1.4-0.dll"
 libhunspell_devel_CONTENTS="
 	--exclude=hunspell.exe --exclude=hunspell.1* --exclude=*.dll
 	usr/bin/ usr/include/ usr/lib/ usr/share/man/"
 
-DIFF_EXCLUDES="intl m4 po"
+DIFF_EXCLUDES="intl m4 po hunvisapi.h"
 
-CYGCONF_ARGS="--with-readline --with-ui"
-
-DOCS="*.myspell"
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	cd ${B}
+	cygconf --with-readline --with-ui
+	ln -sf {${B},${S}}/src/hunspell/hunvisapi.h
+	cygmake
+	cygmake -C po update-gmo
+}
 
 src_install() {
 	cd ${B}
@@ -40,3 +43,6 @@ src_install() {
 
 	rm -f ${D}/usr/lib/libparsers.a
 }
+
+DOCS="*.myspell"
+
