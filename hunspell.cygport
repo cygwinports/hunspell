@@ -1,5 +1,5 @@
 NAME="hunspell"
-VERSION=1.4.1
+VERSION=1.6.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Spell checker and morphological analyzer"
@@ -9,7 +9,7 @@ compounding or character encoding."
 HOMEPAGE="https://hunspell.github.io/"
 SRC_URI="https://github.com/hunspell/hunspell/archive/v${VERSION}/hunspell-v${VERSION}.tar.gz"
 
-PKG_NAMES="hunspell libhunspell1.4_0 libhunspell-devel"
+PKG_NAMES="hunspell libhunspell1.6_0 libhunspell-devel"
 hunspell_CATEGORY="Text"
 hunspell_CONTENTS="
 	usr/bin/hunspell.exe
@@ -18,7 +18,7 @@ hunspell_CONTENTS="
 	usr/share/man/man1/hunspell.1*
 	usr/share/man/hu/man1/hunspell.1*
 "
-libhunspell1_4_0_CONTENTS="usr/bin/*-1.4-0.dll"
+libhunspell1_6_0_CONTENTS="usr/bin/*-1.6-0.dll"
 libhunspell_devel_CONTENTS="
 	--exclude=hunspell.exe --exclude=hunspell.1* --exclude=*.dll
 	usr/bin/ usr/include/ usr/lib/ usr/share/man/"
